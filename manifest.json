@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "dWatson",
+	"version": "0.0.1",
+	"description": "A Chrome extension which replaces all images on all pages to Dominic Watson.",
+	"author": "Joao Dias <mail@joaodias.eu>",
+	"permissions": [
+		"activeTab"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*/*"
+			],
+			"js": [
+				"dwatson.js"
+			]
+		}
+	]
+}
